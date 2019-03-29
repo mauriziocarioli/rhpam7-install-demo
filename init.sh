@@ -1,5 +1,5 @@
 #!/bin/sh
-. init-properties.sh
+. ./init-properties.sh
 
 # wipe screen.
 clear
@@ -156,6 +156,15 @@ $JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u kieserver -p kieserver1! -
 $JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u caseUser -p redhatpam1! -ro user --silent
 $JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u caseManager -p redhatpam1! -ro user,manager --silent
 $JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u caseSupplier -p redhatpam1! -ro user,supplier --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u Bob -p redhatpam1! -ro user --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u Ann -p redhatpam1! -ro user --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u Charlie -p redhatpam1! -ro user --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u Mandy -p redhatpam1! -ro user,manager --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u Myriam -p redhatpam1! -ro user,manager --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u Steve -p redhatpam1! -ro user,supplier --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u Shannon -p redhatpam1! -ro user,supplier --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u Dale -p redhatpam1! -ro user,developer --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u Dave -p redhatpam1! -ro user,developer --silent
 
 echo "  - setting up standalone.xml configuration adjustments..."
 echo
